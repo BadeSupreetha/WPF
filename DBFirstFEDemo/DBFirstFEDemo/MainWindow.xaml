@@ -1,0 +1,20 @@
+﻿<Window x:Class="DBFirstFEDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBFirstFEDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="725" Width="725">
+    <Grid>
+        <Button x:Name="btn_Display" Content="Display Employee" HorizontalAlignment="Left" Margin="386,30,0,0" VerticalAlignment="Top" Width="121" Click="btn_Display_Click"/>
+
+        <DataGrid Background="White" Name="dg_emp" Margin="35,82,41,283"></DataGrid>
+        <Label x:Name="lbl_emplocation" Content="Enter location" HorizontalAlignment="Left" Margin="35,30,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_emplocation" HorizontalAlignment="Left" Height="23" Margin="183,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_empID" Content="Enter ID to be Deleted" HorizontalAlignment="Left" Margin="35,483,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_empID" HorizontalAlignment="Left" Height="23" Margin="183,483,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_DeleteEmp" Content="Delete Employee" HorizontalAlignment="Left" Margin="386,483,0,0" VerticalAlignment="Top" Width="121" Click="btn_Delete_Click"/>
+
+    </Grid>
+</Window>
